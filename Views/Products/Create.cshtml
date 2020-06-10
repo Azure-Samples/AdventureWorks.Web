@@ -1,0 +1,96 @@
+﻿@model AdventureWorks.Web.Models.Product
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>Product</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProductNumber" class="control-label"></label>
+                <input asp-for="ProductNumber" class="form-control" />
+                <span asp-validation-for="ProductNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Color" class="control-label"></label>
+                <input asp-for="Color" class="form-control" />
+                <span asp-validation-for="Color" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StandardCost" class="control-label"></label>
+                <input asp-for="StandardCost" class="form-control" />
+                <span asp-validation-for="StandardCost" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ListPrice" class="control-label"></label>
+                <input asp-for="ListPrice" class="form-control" />
+                <span asp-validation-for="ListPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Size" class="control-label"></label>
+                <input asp-for="Size" class="form-control" />
+                <span asp-validation-for="Size" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Weight" class="control-label"></label>
+                <input asp-for="Weight" class="form-control" />
+                <span asp-validation-for="Weight" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProductCategoryId" class="control-label"></label>
+                <select asp-for="ProductCategoryId" class ="form-control" asp-items="ViewBag.ProductCategoryId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProductModelId" class="control-label"></label>
+                <select asp-for="ProductModelId" class ="form-control" asp-items="ViewBag.ProductModelId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="SellStartDate" class="control-label"></label>
+                <input asp-for="SellStartDate" class="form-control" />
+                <span asp-validation-for="SellStartDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SellEndDate" class="control-label"></label>
+                <input asp-for="SellEndDate" class="form-control" />
+                <span asp-validation-for="SellEndDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DiscontinuedDate" class="control-label"></label>
+                <input asp-for="DiscontinuedDate" class="form-control" />
+                <span asp-validation-for="DiscontinuedDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ThumbNailPhoto" class="control-label"></label>
+                <input asp-for="ThumbNailPhoto" class="form-control" />
+                <span asp-validation-for="ThumbNailPhoto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ThumbnailPhotoFileName" class="control-label"></label>
+                <input asp-for="ThumbnailPhotoFileName" class="form-control" />
+                <span asp-validation-for="ThumbnailPhotoFileName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

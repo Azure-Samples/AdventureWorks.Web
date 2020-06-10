@@ -1,0 +1,102 @@
+﻿@model AdventureWorks.Web.Models.Customer
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Customer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NameStyle)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NameStyle)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MiddleName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MiddleName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Suffix)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Suffix)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CompanyName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CompanyName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SalesPerson)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SalesPerson)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailAddress)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmailAddress)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PasswordHash)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PasswordHash)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PasswordSalt)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PasswordSalt)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Rowguid)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Rowguid)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifiedDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedDate)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.CustomerId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

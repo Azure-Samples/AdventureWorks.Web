@@ -1,0 +1,114 @@
+﻿@model AdventureWorks.Web.Models.Product
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProductNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Color)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Color)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StandardCost)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StandardCost)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ListPrice)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ListPrice)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Size)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Size)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Weight)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Weight)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SellStartDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SellStartDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SellEndDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SellEndDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DiscontinuedDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DiscontinuedDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ThumbNailPhoto)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ThumbNailPhoto)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ThumbnailPhotoFileName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ThumbnailPhotoFileName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Rowguid)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Rowguid)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifiedDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductCategory)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProductCategory.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProductModel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProductModel.Name)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ProductId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
